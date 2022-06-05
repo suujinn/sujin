@@ -1,0 +1,145 @@
+# sujin
+
+import java,awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.awt.Font;
+import javax.swing.SwingConstants;
+
+public class CaculatorStudy01 {
+
+    private JFrame frame;
+    
+    public static void main(String[] args) {
+       EventQueue.invokeLater(new Ruunnable ()  [
+          public void run()  {
+            try  {
+              CalculatorSudy01 window = new CalculatorSudy01() ;
+              window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	public CalculatorStudy01() {
+		initialize();
+	}
+
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 400, 450);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton Button_1 = new JButton("1");
+		Button_1.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_1.setBounds(12, 173, 80, 50);
+		frame.getContentPane().add(Button_1);
+		
+		JButton Button_2 = new JButton("2");
+		Button_2.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_2.setBounds(104, 173, 80, 50);
+		frame.getContentPane().add(Button_2);
+		
+		JButton Button_3 = new JButton("3");
+		Button_3.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_3.setBounds(196, 173, 80, 50);
+		frame.getContentPane().add(Button_3);
+		
+		JButton Button_multiple = new JButton("\u00D7");
+		Button_multiple.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_multiple.setBounds(288, 173, 80, 50);
+		frame.getContentPane().add(Button_multiple);
+		
+		JButton Button_4 = new JButton("4");
+		Button_4.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_4.setBounds(12, 233, 80, 50);
+		frame.getContentPane().add(Button_4);
+		
+		JButton Button_5 = new JButton("5");
+		Button_5.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_5.setBounds(104, 233, 80, 50);
+		frame.getContentPane().add(Button_5);
+		
+		JButton Button_6 = new JButton("6");
+		Button_6.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_6.setBounds(196, 233, 80, 50);
+		frame.getContentPane().add(Button_6);
+		
+		JButton Button_minus = new JButton("-");
+		Button_minus.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_minus.setBounds(288, 233, 80, 50);
+		frame.getContentPane().add(Button_minus);
+		
+		JButton Button_7 = new JButton("7");
+		Button_7.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_7.setBounds(12, 293, 80, 50);
+		frame.getContentPane().add(Button_7);
+		
+		JButton Button_8 = new JButton("8");
+		Button_8.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_8.setBounds(104, 293, 80, 50);
+		frame.getContentPane().add(Button_8);
+		
+		JButton Button_9 = new JButton("9");
+		Button_9.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_9.setBounds(196, 293, 80, 50);
+		frame.getContentPane().add(Button_9);
+		
+		JButton Button_plus = new JButton("+");
+		Button_plus.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_plus.setBounds(288, 293, 80, 50);
+		frame.getContentPane().add(Button_plus);
+		
+		JButton Button_0 = new JButton("0");
+		Button_0.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_0.setBounds(104, 353, 80, 50);
+		frame.getContentPane().add(Button_0);
+		
+		JButton Button_npNumber = new JButton("+/-");
+		Button_npNumber.setFont(new Font("굴림", Font.BOLD, 16));
+		Button_npNumber.setBounds(196, 353, 80, 50);
+		frame.getContentPane().add(Button_npNumber);
+		
+		JButton Button_equal = new JButton("=");
+		Button_equal.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_equal.setBounds(288, 353, 80, 50);
+		frame.getContentPane().add(Button_equal);
+		
+		JButton Button_division = new JButton("\u00F7");
+		Button_division.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_division.setBounds(288, 113, 80, 50);
+		frame.getContentPane().add(Button_division);
+		
+		JButton Button_percent = new JButton("%");
+		Button_percent.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_percent.setBounds(196, 113, 80, 50);
+		frame.getContentPane().add(Button_percent);
+		
+		JButton Button_C = new JButton("C");
+		Button_C.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_C.setBounds(104, 113, 80, 50);
+		frame.getContentPane().add(Button_C);
+		
+		JButton Button_AC = new JButton("AC");
+		Button_AC.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_AC.setBounds(12, 113, 80, 50);
+		frame.getContentPane().add(Button_AC);
+		
+		JButton Button_dot = new JButton(".");
+		Button_dot.setFont(new Font("굴림", Font.BOLD, 20));
+		Button_dot.setBounds(12, 353, 80, 50);
+		frame.getContentPane().add(Button_dot);
+		
+		JLabel CalculationScreen = new JLabel("0");
+		CalculationScreen.setHorizontalAlignment(SwingConstants.RIGHT);
+		CalculationScreen.setFont(new Font("굴림", Font.BOLD, 40));
+		CalculationScreen.setBounds(12, 13, 356, 90);
+		frame.getContentPane().add(CalculationScreen);
+	}
+}
+              
